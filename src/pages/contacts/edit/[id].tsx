@@ -1,4 +1,4 @@
-import { AddEdit } from '../../../components/contacts';
+import AddEdit from '../../../components/contacts/AddEdit';
 import {useAppDispatch, useAppSelector} from "../../../app/hooks";
 import {NextPage} from "next";
 import {NextRouter, useRouter} from "next/router";
@@ -17,7 +17,7 @@ const Page: NextPage = () => {
     }, []);
 
     return (
-        <AddEdit user={contact}/>
+        <AddEdit user={contact.contact}/>
     );
 };
 

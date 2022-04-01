@@ -19,8 +19,9 @@ const IndexPage: NextPage = () => {
         <title>Angel test</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Link href="/contacts/add" className="btn btn-sm btn-success mb-2">Add User</Link>
       <header className={styles.header}>
+          <Link href="/contacts/add">Add Contact</Link>
+          <br/>
         <Contact />
       </header>
     </div>
